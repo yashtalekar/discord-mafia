@@ -1,0 +1,28 @@
+[project]
+name = "discord-mafia"
+version = "0.1.0"
+description = "A discord bot to run games of Mafia."
+authors = [
+    {name = "yashtalekar",email = "yashctalekar@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "discord-py (>=2.5.2,<3.0.0)"
+]
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.11.2"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
+preview = true  # Enables formatter
+
+[tool.ruff.format]
+quote-style = "double"
